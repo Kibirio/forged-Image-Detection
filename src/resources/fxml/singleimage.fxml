@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="301.0" prefWidth="479.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+   <children>
+      <AnchorPane layoutX="28.0" layoutY="22.0" prefHeight="260.0" prefWidth="426.0">
+         <children>
+            <Text layoutX="116.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Single Image Checker" wrappingWidth="148.13671875" />
+            <JFXButton layoutX="14.0" layoutY="64.0" prefHeight="48.0" prefWidth="183.0" stylesheets="@../stylesheet/main.css" text="Choose Neural Network" />
+            <JFXButton layoutX="14.0" layoutY="130.0" prefHeight="48.0" prefWidth="183.0" stylesheets="@../stylesheet/main.css" text="choose Image  (ELA Applied)" />
+            <JFXCheckBox layoutX="255.0" layoutY="79.0" text=" " />
+            <JFXButton layoutX="152.0" layoutY="198.0" prefHeight="48.0" prefWidth="123.0" stylesheets="@../stylesheet/main.css" text="Check" />
+            <JFXCheckBox layoutX="255.0" layoutY="145.0" text="   " />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

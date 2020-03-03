@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="483.0" prefWidth="803.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="44.0" prefHeight="425.0" prefWidth="385.0">
+         <children>
+            <JFXButton layoutX="63.0" layoutY="17.0" prefHeight="39.0" prefWidth="143.0" stylesheets="@../stylesheet/main.css" text="Choose Neural Network" />
+            <JFXButton layoutX="63.0" layoutY="95.0" prefHeight="39.0" prefWidth="146.0" stylesheets="@../stylesheet/main.css" text="Choose Image Source" />
+            <JFXTextField labelFloat="true" layoutX="9.0" layoutY="175.0" promptText="Real Image Label" text="Fake">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField labelFloat="true" layoutX="9.0" layoutY="231.0" promptText="Width of Image" text="100">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField labelFloat="true" layoutX="9.0" layoutY="279.0" promptText="Learning Rate" text="0.2">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField labelFloat="true" layoutX="14.0" layoutY="321.0" promptText="Momentum Error" text="0.01">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </JFXTextField>
+            <JFXButton layoutX="14.0" layoutY="372.0" prefHeight="39.0" prefWidth="135.0" stylesheets="@../stylesheet/main.css" text="Start Training" />
+            <JFXButton layoutX="205.0" layoutY="372.0" prefHeight="39.0" prefWidth="146.0" stylesheets="@../stylesheet/main.css" text="Save Learned Network" />
+            <JFXSpinner layoutX="253.0" layoutY="313.0" />
+            <JFXTextField labelFloat="true" layoutX="206.0" layoutY="175.0" promptText="Fake Image Label" text="Faked">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField labelFloat="true" layoutX="206.0" layoutY="231.0" promptText="Height of Image" text="100">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField labelFloat="true" layoutX="213.0" layoutY="279.0" promptText="Momentum" text="0.7">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </JFXTextField>
+            <JFXCheckBox layoutX="245.0" layoutY="28.0" text=" " />
+            <JFXCheckBox layoutX="245.0" layoutY="106.0" text=" " />
+         </children>
+      </AnchorPane>
+      <StackPane layoutX="393.0" layoutY="32.0" prefHeight="447.0" prefWidth="401.0">
+         <children>
+            <LineChart prefHeight="401.0" prefWidth="401.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+         </children>
+      </StackPane>
+      <MenuBar prefHeight="25.0" prefWidth="818.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="New Training Window" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

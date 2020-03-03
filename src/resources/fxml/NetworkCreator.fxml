@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="655.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+   <children>
+      <ScrollPane layoutX="105.0" prefHeight="470.0" prefWidth="458.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="92.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <Pane prefHeight="468.0" prefWidth="456.0">
+               <children>
+                  <JFXTextField labelFloat="true" layoutX="14.0" layoutY="74.0" prefHeight="25.0" prefWidth="422.0" promptText="Neural Network Label">
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
+                  </JFXTextField>
+                  <Text layoutX="63.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="multilayer perceptron Network Make Wizard" wrappingWidth="329.13671875">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField labelFloat="true" layoutX="17.0" layoutY="132.0" prefHeight="25.0" prefWidth="175.0" promptText="Sampling Width">
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
+                  </JFXTextField>
+                  <JFXComboBox labelFloat="true" layoutX="15.0" layoutY="185.0" prefHeight="25.0" prefWidth="420.0" promptText="Select Color Mode">
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
+                  </JFXComboBox>
+                  <JFXTextField labelFloat="true" layoutX="18.0" layoutY="234.0" prefHeight="25.0" prefWidth="415.0" promptText="Comma Separated Output Neurons Labels">
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
+                  </JFXTextField>
+                  <JFXTextField labelFloat="true" layoutX="18.0" layoutY="291.0" prefHeight="25.0" prefWidth="414.0" promptText="Comma Separated Neuron Counts">
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
+                  </JFXTextField>
+                  <JFXSpinner layoutX="23.0" layoutY="405.0" />
+                  <JFXButton layoutX="199.0" layoutY="405.0" prefHeight="49.0" prefWidth="220.0" stylesheets="@../stylesheet/main.css" text="Make And Save Network" />
+                  <JFXTextField labelFloat="true" layoutX="232.0" layoutY="132.0" prefHeight="25.0" prefWidth="204.0" promptText="Sampling Height">
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
+                  </JFXTextField>
+                  <JFXComboBox labelFloat="true" layoutX="14.0" layoutY="347.0" prefHeight="25.0" prefWidth="415.0" promptText="Select Transfer Function">
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
+                  </JFXComboBox>
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

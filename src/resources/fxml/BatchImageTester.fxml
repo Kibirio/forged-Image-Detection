@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="517.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+   <children>
+      <AnchorPane layoutX="26.0" layoutY="17.0" prefHeight="368.0" prefWidth="462.0">
+         <children>
+            <JFXButton layoutX="107.0" layoutY="20.0" prefHeight="59.0" prefWidth="157.0" stylesheets="@../stylesheet/main.css" text="Choose Neural Network" />
+            <JFXButton layoutX="108.0" layoutY="102.0" prefHeight="59.0" prefWidth="157.0" stylesheets="@../stylesheet/main.css" text="Real Image Source" />
+            <JFXButton layoutX="106.0" layoutY="187.0" prefHeight="59.0" prefWidth="157.0" stylesheets="@../stylesheet/main.css" text="Fake Image Source" />
+            <JFXButton layoutX="126.0" layoutY="298.0" prefHeight="50.0" prefWidth="109.0" stylesheets="@../stylesheet/main.css" text="Start Testing" />
+            <JFXCheckBox layoutX="294.0" layoutY="41.0" text=" " />
+            <JFXCheckBox layoutX="294.0" layoutY="123.0" text=" " />
+            <JFXCheckBox layoutX="294.0" layoutY="208.0" text=" " />
+            <JFXSpinner layoutX="298.0" layoutY="298.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
